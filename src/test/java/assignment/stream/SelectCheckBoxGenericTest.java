@@ -3,8 +3,6 @@ package assignment.stream;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Predicate;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
@@ -13,25 +11,23 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.google.common.util.concurrent.Uninterruptibles;
-
-import assignment.pagemodel.TableDemo;
+import assignment.pagemodel.CheckBoxTable;
 import functional.supplier.DriverFactory;
 
-public class CheckBoxGenericTest {
+public class SelectCheckBoxGenericTest {
 
 	// Select all checkbox
 	// Select checkbox based on gender
 
 	private WebDriver driver;
-	private TableDemo tableDemo;
+	private CheckBoxTable tableDemo;
 
 	@BeforeTest
 	@Parameters("browser")
 	public void getDriver(@Optional("chrome") String browser) {
 		this.driver = DriverFactory.getDriver(browser);
-		this.tableDemo = new TableDemo(driver);
+		this.tableDemo = new CheckBoxTable(driver);
 	}
 
 
@@ -57,7 +53,10 @@ public class CheckBoxGenericTest {
 		Predicate<List<WebElement>> allgender=allmale.or(allfemale);
 
 		return new Object[] {
-				allmale, allfemale,allgender };
+				
+				allmale,
+				allfemale,
+				allgender };
 	}	
 
 	@AfterTest

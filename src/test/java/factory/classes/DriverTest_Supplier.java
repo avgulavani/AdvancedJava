@@ -1,4 +1,4 @@
-package supplier.interfaces;
+package factory.classes;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import functional.supplier.DriverFactory;
 
-public class DriverTest {
+public class DriverTest_Supplier {
 	
 	private WebDriver driver;
 	

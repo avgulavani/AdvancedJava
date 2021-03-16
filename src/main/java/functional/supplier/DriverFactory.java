@@ -23,6 +23,10 @@ public class DriverFactory {
 
 	private static final Supplier<WebDriver> firefoxSupplier = () -> {
 
+		//System.setProperty("webdriver.gecko.driver",
+		//		"/Users/a.vitthal.gulavani/Desktop/Personal_Data/protractor_js_framework.javascript/node_modules/protractor/node_modules/webdriver-manager/selenium/geckodriver-v0.29.0");
+		
+		
 		System.setProperty("webdriver.gecko.driver",
 				"/Users/a.vitthal.gulavani/Desktop/Personal_Data/protractor_js_framework.javascript/node_modules/protractor/node_modules/webdriver-manager/selenium/geckodriver-v0.29.0");
 		return new ChromeDriver();

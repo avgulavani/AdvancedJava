@@ -14,22 +14,22 @@ import org.testng.annotations.Test;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 
-import assignment.pagemodel.TableDemo;
+import assignment.pagemodel.CheckBoxTable;
 import functional.supplier.DriverFactory;
 
-public class TableDemoTest {
+public class SelectCheckBoxGenderTest {
 
 	// Select all checkbox
 	// Select checkbox based on gender
 
 	private WebDriver driver;
-	private TableDemo tableDemo;
+	private CheckBoxTable tableDemo;
 
 	@BeforeTest
 	@Parameters("browser")
 	public void getDriver(@Optional("chrome") String browser) {
 		this.driver = DriverFactory.getDriver(browser);
-		this.tableDemo = new TableDemo(driver);
+		this.tableDemo = new CheckBoxTable(driver);
 	}
 
 	@Test

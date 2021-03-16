@@ -7,11 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class TableDemo {
+public class CheckBoxTable {
 	
 	private final WebDriver driver;
 	
-	public TableDemo(WebDriver driver) {
+	public CheckBoxTable(WebDriver driver) {
 		
 		this.driver=driver;
 	}
