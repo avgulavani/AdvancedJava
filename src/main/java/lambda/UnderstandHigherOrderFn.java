@@ -6,8 +6,8 @@ public class UnderstandHigherOrderFn {
 
 		/*
 		 * In general we always pass data to function to change behavior Before Java 8 -
-		 * We used to give data to function which work for us Higer Order Funcion - >
-		 * function will give you data you decide how it will behave
+		 * We used to give data to function which work for us.
+		 * Higher Order Function - > function will give you data you decide how it will behave
 		 * 
 		 *  SUMMARY:
 		 */

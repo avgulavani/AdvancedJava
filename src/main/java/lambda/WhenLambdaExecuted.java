@@ -38,7 +38,7 @@ public class WhenLambdaExecuted {
 
 		System.out.println("inside test/ Service-Greetservice");
 
-		String returnedString = g1.greet("beaAtifuL java 8");
+		String returnedString = g1.greet("beaatifuL java 8");
 		System.out.println("from lambda: " + returnedString);
 	}
 }
